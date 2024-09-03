@@ -1,18 +1,12 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
- //import './App.css';
- import Home from './pages/Home';
- import Auth from './pages/Auth';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import router from './routes';
 
- function App() {
-   return (
-     <div className="App">
-        <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='/auth' element={<Auth/>} />
-        </Routes>        
-     </div>
-   );
- }
+const App = () => (
+  <div className="app" >
+    <RouterProvider router={router} />
+  </div>
+);
 
- export default App;
+export default App;

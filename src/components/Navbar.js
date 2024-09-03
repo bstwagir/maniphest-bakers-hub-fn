@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
            <Link to="/">Home</Link>
          </li>
          <li>
-           <Link to="/auth">SignUp/Login</Link>
+           <Link to="/authentication">SignUp/Login</Link>
          </li>
        </ul>
      </nav>
