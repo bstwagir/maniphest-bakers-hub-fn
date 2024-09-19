@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 
 import { signUp } from '../redux/actions/signup';
-import signIn from '../redux/actions/Login';
+import signIn from '../redux/actions/login';
 
 import '../css/Auth.css';
 
